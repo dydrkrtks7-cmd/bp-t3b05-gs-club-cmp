@@ -3,205 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>강서 클럽 비교 | 정보</title>
-    <meta name="description" content="강서 클럽 비교 정보: 강서구 클럽의 상세 데이터, 운영 시간, 가격대, 음악 장르 등 객관적 정보를 제공합니다. 방문자 리뷰 기반 분석으로 신뢰도 높은 비교 자료를 확인하세요.">
-    <meta name="keywords" content="강서 클럽, 강서구 클럽, 클럽 정보, 클럽 가격, 강서 나이트, 클럽 운영시간, 클럽 비교">
-    <link rel="canonical" href="https://t3b05-gs-club-cmp.vercel.app/info">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="강서 클럽 비교 | 상세 정보와 데이터 기반 분석">
-    <meta property="og:description" content="강서 클럽 비교 정보: 강서구 최고의 클럽에 대한 객관적 데이터, 운영 정보, 방문자 통계를 제공합니다.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://t3b05-gs-club-cmp.vercel.app/info">
-    <meta property="og:image" content="https://t3b05-gs-club-cmp.vercel.app/og-info.jpg">
-    
+    <meta name="generator" content="custom-cms-9a2f">
+    <meta name="bpaas-design-system" content="midnight-glass">
+    <meta name="bpaas-design-theme" content="kr-midnight-glass">
+    <title>강서 클럽 비교 및 행사 실무 가이드 | 상세 정보</title>
+    <meta name="description" content="강서 지역 클럽을 비교하고 행사를 준비하는 실무자를 위해 공간 선정 기준, 인원 변동 대응, 정산 프로세스 등 실질적인 준비 사항을 정리했습니다.">
+    <meta name="keywords" content="강서 클럽 비교, 강서 클럽 예약 가이드, 모임 준비, 클럽 행사 실무">
+    <link rel="canonical" href="https://gangseo-review-hot.mapo-room-guide.xyz/about.html">
     <style>
-        /* 핵심 CSS: hamburger-menu, responsive-768, brutalism base */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Courier New', Courier, monospace; background: #0a0a0a; color: #e0e0e0; line-height: 1.6; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        
-        /* 헤더 및 네비게이션 */
-        header { background: #111; border-bottom: 3px solid #ff00ff; padding: 15px 0; position: sticky; top: 0; z-index: 100; }
-        .header-inner { display: flex; justify-content: space-between; align-items: center; }
-        .logo a { color: #ff00ff; text-decoration: none; font-size: 1.5rem; font-weight: bold; letter-spacing: 2px; text-transform: uppercase; }
-        .hamburger-menu { display: none; flex-direction: column; cursor: pointer; }
-        .hamburger-menu span { width: 30px; height: 4px; background: #ff00ff; margin: 4px 0; transition: 0.3s; }
-        .nav-links { display: flex; list-style: none; gap: 30px; }
-        .nav-links a { color: #ccc; text-decoration: none; font-size: 1rem; padding: 8px 12px; border: 1px solid transparent; transition: 0.3s; }
-        .nav-links a:hover, .nav-links a.active { color: #ff00ff; border-color: #ff00ff; background: rgba(255,0,255,0.1); }
-        
-        /* 메인 콘텐츠 */
-        .hero { padding: 60px 0 40px; border-bottom: 2px solid #333; text-align: center; }
-        .hero h1 { font-size: 2.8rem; color: #ff00ff; margin-bottom: 15px; letter-spacing: 1px; }
-        .hero p { font-size: 1.1rem; color: #aaa; max-width: 700px; margin: 0 auto; }
-        
-        .info-section { padding: 50px 0; }
-        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-        .info-card { background: #151515; border: 1px solid #333; padding: 25px; transition: 0.3s; }
-        .info-card:hover { border-color: #ff00ff; box-shadow: 0 0 15px rgba(255,0,255,0.2); }
-        .info-card h3 { font-size: 1.4rem; color: #fff; margin-bottom: 10px; }
-        .info-card .category { color: #ff00ff; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
-        .info-card p { color: #bbb; }
-        .info-card .data { font-size: 2rem; color: #ff00ff; font-weight: bold; margin: 10px 0; }
-        
-        .comparison-table { background: #151515; border: 2px solid #333; overflow-x: auto; margin-top: 40px; }
-        .comparison-table table { width: 100%; border-collapse: collapse; }
-        .comparison-table th, .comparison-table td { padding: 15px 20px; text-align: left; border-bottom: 1px solid #333; }
-        .comparison-table th { background: #0d0d0d; color: #ff00ff; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
-        .comparison-table td { color: #ccc; }
-        .comparison-table tr:hover { background: #1a1a1a; }
-        
-        .faq-section { padding: 50px 0; border-top: 2px solid #333; background: #0d0d0d; }
-        .faq-section h2 { text-align: center; font-size: 2rem; color: #ff00ff; margin-bottom: 40px; }
-        .faq-item { margin-bottom: 20px; border: 1px solid #333; }
-        .faq-question { background: #111; padding: 18px 25px; cursor: pointer; color: #fff; font-weight: bold; display: flex; justify-content: space-between; align-items: center; }
-        .faq-question:hover { background: #1a1a1a; }
-        .faq-answer { padding: 18px 25px; color: #bbb; display: none; }
-        .faq-item.active .faq-answer { display: block; }
-        
-        /* 푸터 */
-        footer { background: #111; border-top: 3px solid #ff00ff; padding: 30px 0; text-align: center; color: #666; margin-top: 50px; }
-        footer p { font-size: 0.9rem; }
-        
-        /* 반응형 */
-        @media (max-width: 768px) {
-            .hamburger-menu { display: flex; }
-            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #111; border-bottom: 3px solid #ff00ff; padding: 20px; gap: 15px; }
-            .nav-links.open { display: flex; }
-            .hero h1 { font-size: 2rem; }
-            .info-grid { grid-template-columns: 1fr; }
-        }
+        :root { --bg-color: #0a0a0c; --text-color: #e0e0e0; --accent-color: #8a2be2; }
+        body { background-color: var(--bg-color); color: var(--text-color); font-family: 'Pretendard', sans-serif; margin: 0; padding: 0; }
+        .n-body-0y0x { max-width: 1000px; margin: 0 auto; padding: 20px; }
+        .v-body-ow02 { background: rgba(255, 255, 255, 0.03); border-radius: 12px; padding: 30px; margin-bottom: 20px; }
+        .v-item-md2m { border-left: 2px solid var(--accent-color); padding-left: 15px; margin: 20px 0; }
+        .k-top-29dt { font-size: 2rem; margin-bottom: 30px; color: #fff; }
+        .n-box-m193 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .k-wrap-d9qa { line-height: 1.8; color: #b0b0b0; }
+        nav { padding: 20px 0; border-bottom: 1px solid #333; margin-bottom: 30px; }
+        nav a { color: var(--accent-color); margin-right: 15px; text-decoration: none; }
+        @media (max-width:768px) { .n-body-0y0x { padding: 15px; } }
     </style>
+  <meta property="og:url" content="https://gangseo-review-hot.mapo-room-guide.xyz/about.html">
 </head>
 <body>
-    <header>
-        <div class="container header-inner">
-            <div class="logo">
-                <a href="/">강서 클럽 비교</a>
-            </div>
-            <div class="hamburger-menu" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="/">홈</a></li>
-                <li><a href="/compare">비교</a></li>
-                <li><a href="/info" class="active">정보</a></li>
-                <li><a href="/review">리뷰</a></li>
-                <li><a href="/contact">문의</a></li>
+    <div class="n-body-0y0x">
+        <nav class="nav-present">
+            <a href="/">홈</a>
+            <a href="/info">정보</a>
+            <a href="/guide">가이드</a>
+        </nav>
+
+        <h1 class="k-top-29dt">강서 지역 클럽 행사 성공을 위한 실무 가이드</h1>
+
+        <section class="v-body-ow02">
+            <h2>공간 선정의 핵심 기준</h2>
+            <p class="k-wrap-d9qa">강서 지역에서 클럽 행사를 기획할 때 가장 먼저 고려해야 할 점은 단순히 공간의 크기가 아닙니다. 행사 목적에 따른 동선 확보와 음향 설비의 사양을 꼼꼼히 따져봐야 합니다. 특히 DJ 부스와 테이블 배치 간의 간격이 너무 좁으면 이동이 불편해지고, 이는 곧 서비스 만족도 저하로 직결됩니다.</p>
+            <p class="k-wrap-d9qa">또한, 화장실의 위치와 접근성도 간과해서는 안 됩니다. 규모가 큰 행사를 준비할 때 실무자들은 화장실 대기 줄이 메인 홀 동선을 침범하지 않는지 반드시 현장 실사를 통해 확인해야 합니다. 이러한 세밀한 체크리스트가 행사의 질을 결정짓는 첫 번째 단추가 됩니다.</p>
+        </section>
+
+        <section class="v-body-ow02">
+            <h2>인원 변동 대응 전략</h2>
+            <p class="k-wrap-d9qa">행사 준비 중 가장 골치 아픈 문제는 예상보다 인원이 늘거나 줄어드는 상황입니다. 이를 대비해 클럽 측과 계약할 때 '최소 보장 인원'과 '추가 인원 발생 시 대응 방안'을 명문화하는 것이 필수적입니다. 유동적인 인원 변화에 대응하기 위해 예약금을 분할 납부하거나, 인원 확정 마감 기한을 행사 3일 전으로 설정하는 식의 유연한 계약 구조를 설계하세요.</p>
+            <p class="k-wrap-d9qa">만약 예상보다 많은 인원이 방문할 경우를 대비해 스탠딩석의 확보 여부도 미리 협의해두어야 합니다. 좌석이 부족해질 경우 발생할 수 있는 클레임을 미연에 방지하기 위해, 현장에서 즉각적으로 동선을 재배치할 수 있는 매니저와의 커뮤니케이션 채널을 미리 확보하는 것이 좋습니다.</p>
+        </section>
+
+        <section class="v-body-ow02">
+            <h2>투명한 정산 프로세스</h2>
+            <p class="k-wrap-d9qa">행사가 끝난 후 가장 깔끔하게 마무리해야 할 부분은 단연 정산입니다. 당일 추가 주문 내역이나 서비스 품목에 대한 비용이 불명확하면 나중에 정산 시 큰 마찰이 생길 수 있습니다. 이를 방지하기 위해 매 주문마다 영수증을 확인하고, 현장에서 합의된 서비스 내역을 서면으로 기록해두는 습관이 필요합니다.</p>
+            <p class="k-wrap-d9qa">부가세 포함 여부와 주류 외 추가 비용(기물 파손, 청소비 등)에 대한 약관도 사전에 숙지해야 합니다. 정산은 가급적 행사 직후 현장에서 담당자와 함께 최종 확인을 마치는 것이 가장 이상적이며, 이후에는 정산 내역서를 메일로 받아 보관하여 차후 발생할 수 있는 분쟁을 예방해야 합니다.</p>
+        </section>
+
+        <section class="v-item-md2m">
+            <h3>실무자를 위한 체크포인트</h3>
+            <ul>
+                <li>음향 장비 테스트: 행사 시작 2시간 전 필수 수행</li>
+                <li>주차 지원 여부: 인근 공영주차장 정보와 연계 확인</li>
+                <li>비상시 대피로 확인: 안전 관리자 배치 및 안내문 부착</li>
+                <li>식음료 알레르기 관리: 참석자 명단을 통한 사전 체크</li>
             </ul>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>강서 클럽 상세 정보</h1>
-                <p>강서구 주요 클럽 5곳의 객관적 데이터, 운영 정보, 방문자 통계를 기반으로 한 상세 비교 자료입니다. 2025년 3월 기준, 1,200명의 방문자 설문조사와 현장 조사 결과를 반영하였습니다.</p>
-            </div>
         </section>
-
-        <section class="info-section">
-            <div class="container">
-                <div class="info-grid">
-                    <div class="info-card">
-                        <div class="category">음악 장르 분포</div>
-                        <h3>EDM & 힙합 지배</h3>
-                        <p>강서구 클럽 중 68%는 EDM을 메인 장르로, 22%는 힙합/R&B를 주력으로 운영합니다. 하우스와 테크노는 각각 7%, 3%의 비중을 차지합니다. (출처: 2025 강서구 유흥시장 분석)</p>
-                        <div class="data">68% EDM</div>
-                    </div>
-                    <div class="info-card">
-                        <div class="category">평균 가격대</div>
-                        <h3>커버 차지 & 음료</h3>
-                        <p>주말 기준 평균 커버 차지는 20,000~30,000원이며, 여성 무료 이벤트가 45%의 클럽에서 진행됩니다. 병 가격은 맥주 5,000~8,000원, 양주 세트 80,000~150,000원 범위를 보입니다.</p>
-                        <div class="data">₩25,000 avg</div>
-                    </div>
-                    <div class="info-card">
-                        <div class="category">운영 시간</div>
-                        <h3>심야 운영 표준</h3>
-                        <p>대부분의 클럽은 오후 9시부터 익일 오전 4시까지 운영합니다. 주말(금~토)은 오전 5시까지 연장 운영하는 곳이 전체의 62%에 달합니다. 일부 클럽은 수요일 '레이디스 나이트' 특별 운영.</p>
-                        <div class="data">21:00~04:00</div>
-                    </div>
-                    <div class="info-card">
-                        <div class="category">연령대</div>
-                        <h3>20대 후반~30대 초반 집중</h3>
-                        <p>방문객의 52%가 25~34세이며, 20~24세가 28%, 35세 이상이 20%를 차지합니다. 강서구 클럽은 상대적으로 성숙한 연령대의 방문객이 많아 분위기가 안정적이라는 평가.</p>
-                        <div class="data">25-34 52%</div>
-                    </div>
-                </div>
-
-                <div class="comparison-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>클럽명</th>
-                                <th>음악 장르</th>
-                                <th>커버 차지</th>
-                                <th>평점</th>
-                                <th>운영 시간</th>
-                                <th>특이사항</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>클럽 루나틱</td>
-                                <td>EDM / 하우스</td>
-                                <td>₩30,000</td>
-                                <td>4.2 / 5.0</td>
-                                <td>21:00~05:00 (주말)</td>
-                                <td>VIP 라운지, 주차 지원</td>
-                            </tr>
-                            <tr>
-                                <td>베이스먼트</td>
-                                <td>힙합 / R&B</td>
-                                <td>₩20,000</td>
-                                <td>4.5 / 5.0</td>
-                                <td>21:00~04:00</td>
-                                <td>여성 무료 이벤트 (수/목)</td>
-                            </tr>
-                            <tr>
-                                <td>펄스 나이트</td>
-                                <td>EDM / 트랩</td>
-                                <td>₩25,000</td>
-                                <td>4.0 / 5.0</td>
-                                <td>22:00~04:00</td>
-                                <td>대형 댄스 플로어</td>
-                            </tr>
-                            <tr>
-                                <td>더 블랙홀</td>
-                                <td>테크노 / 하드스타일</td>
-                                <td>₩15,000</td>
-                                <td>4.3 / 5.0</td>
-                                <td>21:00~04:00 (금요일)</td>
-                                <td>언더그라운드 성향</td>
-                            </tr>
-                            <tr>
-                                <td>솔룸</td>
-                                <td>EDM / 팝</td>
-                                <td>₩30,000</td>
-                                <td>4.1 / 5.0</td>
-                                <td>21:00~05:00 (금/토)</td>
-                                <td>프리미엄 라운지, 발렛</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </section>
-
-        <section class="faq-section">
-            <div class="container">
-                <h2>자주 묻는 질문</h2>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">강서구 클럽 접근성이 좋은가요? <span>+</span></div>
-                    <div class="faq-answer">강서구는 지하철 5호선, 9호선이 주요 클럽 밀집 지역을 통과합니다. 발산역, 화곡역, 까치산역 인근에 클럽이 집중되어 있으며, 대부분 역에서 도보 10분 이내 거리입니다. 주말 심야에는 버스 노선이 줄어들 수 있어 대리운전이나 택시 이용을 권장합니다.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="toggleFaq(this)">드레스 코드가 있나요? <span>+</span></div>
-                    <div class="faq-answer">
+    </div>
 </body>
 </html>
